@@ -1,4 +1,4 @@
-## 5.Política de copias de seguridade: plan e métodos
+## 5. Política de copias de seguridade: plan e métodos
 
 Aínda que a nosa empresa non teña a transcendencia dun banco, tampouco nos interesa deixar de lado a seguridade dos datos manexados. Polo tanto, resulta imprescindible trazar unha estratexia de backups automatizadas, para evitar a perda de información en caso de xurdir imprevistos.
 
@@ -14,35 +14,43 @@ Todas as copias serán, como dixemos, con modelo de recuperación completo. Cons
 
 Como todo o feito ata agora, para realizar unha copia de seguridade tamén contamos con dous métodos diferentes: interface gráfica ou código Transact-SQL. Comezamos por amosar a primeira opción. O máis adecuado á hora de xerar backups consiste en crear un novo dispositivo, no que se almacenarán as copais de seguridade. Este dispositivo terá a extensión .bak e atópase no cartafol */Backup* do directorio do noso servidor.
 
-[01](./img/05_01.png)
+![01](./img/05_01.png)
+
 
 Xa que nos decidimos antes por empregar o método de recuperación completo, cómpre comprobar que esta é a opción escollida na database a copiar. Para elo, facemos clic dereito na nosa base de datos, prememos en propiedades e imos á lapela opcións.
 
-[02](./img/05_02.png)
+![02](./img/05_02.png)
+
 
 Con todo listo, xa podemos iniciar a primeira copia de seguridade. Isto realízase facendo clic dereito na base de datos a copiar, despregar o menú tarefas e escollendo a opción copias de seguridade.
 
-[03](./img/05_03.png)
+![03](./img/05_03.png)
+
 
 Na primeira lapela, escollemos a base de datos a copiar e agregamos o dispositivo onde se almacenará. Xa que se trata da primeira copia que imos realizar, esta deberá ser completa.
 
-[04](./img/05_04.png)
+![04](./img/05_04.png)
+
 
 En canto ó resto dos parámetros, optamos polos valores predeterminados. A modo de exemplo, creamos tamén a copia do rexistro de transaccións. Podemos atopar todos os backups realizados accedendo ó dispositivo de copias e consultando o seu contido.
 
-[05](./img/05_05.png)
+![05](./img/05_05.png)
+
 
 Agora que xa sabemos realizar copias de seguridade, imos ver como restauralas. O primeiro paso consiste en volver ás propiedades da database, e establecer unha restrición de acceso single-user. Naturalmente, isto provocará a desconexión do resto de usuarios da base de datos. Ademais, así evitamos que esta sufra modificacións non controladas durante o proceso de restauración.
 
-[06](./img/05_06.png)
+![06](./img/05_06.png)
+
 
 Adicionalmente, realizaremos unha derradeira copia de seguridade do rexistro de transaccións. Neste caso, temos que ir a opcións de medios, co fin de marcar a xanela copia do final de rexistro, que ademais deixará a base de datos en modo de restauración.
 
-[07](./img/05_07.png)
+![07](./img/05_07.png)
+
 
 Coa base de datos en modo de restauración, iniciamos esta facendo clic dereito na base de datos, e despregando o menú tarefas.
 
-[08](./img/05_08.png)
+![08](./img/05_08.png)
+
 
 No plan de restauración, debemos seleccionar:
 
@@ -52,11 +60,13 @@ No plan de restauración, debemos seleccionar:
 
 Ademais, o último elemento a restaurar será sempre a copia do final de rexistro.
 
-[09](./img/05_09.png)
+![09](./img/05_09.png)
+
 
 Tras rematar a restauración, volvemos a establecer a base de datos en modo multi-user.
 
-[10](./img/05_10.png)
+![10](./img/05_10.png)
+
 
 O proceso de copiar e restaurar unha base de datos segue exactamente os mesmos pasos se a realizamos mediante código Transact-SQL: creamos un dispositivo, xeramos as copias necesarias, poñemos a base de datos en modo single-user, realizamos a copia final de rexistro, restauramos os arquivos precisos e volvemos a permitir o acceso multiusuario.
 

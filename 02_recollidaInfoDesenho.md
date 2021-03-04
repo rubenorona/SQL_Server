@@ -1,4 +1,4 @@
-## 2.Recollida de información e deseño da base de datos
+## 2. Recollida de información e deseño da base de datos
 
 Requíresenos deseñar a base de datos dunha cadea de tendas informáticas. Estas sucursais só venden de maneira física, e non teñen planeado moverse ó mercado de pedidos online. A inauguración da primeira tenda tivo lugar en xaneiro do ano 2020. Así pois, debemos rexistrar os seguintes datos:
 
@@ -22,4 +22,4 @@ Por último, debemos levar un control do stock que acumulan as tendas de cada pr
 
 ### Deseño conceptual e lóxico
 
-[desenho](./img/02.png)
+![desenho](./img/02.png)

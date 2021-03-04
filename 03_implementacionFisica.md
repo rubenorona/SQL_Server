@@ -1,4 +1,4 @@
-## 3.Implementación física da base de datos
+## 3. Implementación física da base de datos
 
 Para crear a base de datos, aplicamos os conceptos DDL básicos recollidos nos [apuntamentos](https://github.com/rubenorona/SQL/blob/master/DDL.md). 
 
@@ -250,4 +250,4 @@ ALTER TABLE VENDA
 
 ### Diagrama da base de datos en SQL Server
 
-[diagrama](./img/03.png)
+![diagrama](./img/03.png)
