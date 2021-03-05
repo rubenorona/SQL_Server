@@ -6,14 +6,14 @@ Para comezar a empregar esta utilidade, basta con abrir o símbolo do sistema de
 
 | Sintaxe | Significado                                     |
 |---------|-------------------------------------------------|
-| -S      | Servidor ó que nos conectamos                   |
-| -E      | Conexión de confianza (predeterminado)          |
-| -U      | ID de inicio de sesión                          |
-| -P      | Contrasinal                                     |
-| -q      | Consulta na liña de comandos                    |
-| -Q      | Consulta na liña de comandos + saír ó finalizar |
-| -i      | Ruta de importación dun ficheiro                |
-| -o      | Ruta de exportación dun ficheiro                |
+| **-S**  | Servidor ó que nos conectamos                   |
+| **-E**  | Conexión de confianza (predeterminado)          |
+| **-U**  | ID de inicio de sesión                          |
+| **-P**  | Contrasinal                                     |
+| **-q**  | Consulta na liña de comandos                    |
+| **-Q**  | Consulta na liña de comandos + saír ó finalizar |
+| **-i**  | Ruta de importación dun ficheiro                |
+| **-o**  | Ruta de exportación dun ficheiro                |
 | go      | Execución da caché de instrución                |
 | exit    | Saír de sqlcmd                                  |
 
